@@ -1,0 +1,1 @@
+var speaker = { "data": [{"speaker_id":1, "speaker_name": "粉笔小春", "speaker_gender": "女", "speaker_style": "活泼甜美"}]};

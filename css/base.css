@@ -1,0 +1,238 @@
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,pre,form,input,textarea,p,hr,thead,tbody,tfoot,th,td{margin:0;padding:0;}
+ul,ol{list-style:none;}
+a{text-decoration:none;}
+html{-ms-text-size-adjust:none;-webkit-text-size-adjust:none;text-size-adjust:none;}
+body{line-height:1.5; font-size:14px;}
+body,button,input,select,textarea{font-family:'helvetica neue',tahoma,'hiragino sans gb',stheiti,'wenquanyi micro hei',\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;}
+b,strong{font-weight:bold;}
+i,em{font-style:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+table th,table td{border-bottom:1px solid #eaeaea;padding:0.1rem;line-height: 0.23rem}
+table th{font-weight:inherit;border-bottom-width:2px;border-bottom-color:#ccc;}
+img{border:0 none;width:auto\9;max-width:100%;vertical-align:top; height:auto;}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;vertical-align:baseline;}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}
+button[disabled],input[disabled]{cursor:default;}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}
+input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
+input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}
+input:focus{outline:none;}
+select[size],select[multiple],select[size][multiple]{border:1px solid #AAA;padding:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}
+audio,canvas,video,progress{display:inline-block;}
+body{background:#fff;}
+input::-webkit-input-speech-button {display: none}
+button,input,textarea,a{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body{
+    max-width: 800px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+header{
+    padding: 0.5rem;
+    text-align: center;
+}
+header a{
+    border: 1px solid #3286c6;
+    font-size: 0.2rem;
+    padding: 0.06rem 0.18rem;
+    color: #3286c6;
+    display: inline-block;
+    margin-left: -5px;
+}
+
+header .active{
+    background: #3286c6;
+    color: #fff;
+}
+
+.nav{
+    width: 100%;
+    border-top: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+    overflow: hidden;
+}
+.nav li{
+    width: 21%;
+    float: left;
+    list-style: none;
+    border-right: 1px solid #DDD;
+    margin: 0.1rem;
+    font-size: 14px;
+    text-align: center;
+    color: #888;
+    cursor: pointer;
+}
+.nav li:nth-child(4n){
+    border-right: none;
+}
+.nav .active{
+    color: #3286c6;
+}
+.container{
+    width: 100%;
+}
+.container table{
+    width: 96%;
+    margin: 0 auto;
+}
+.container table tr{
+    border: none;
+}
+.container table td{
+    font-size: 14px;
+}
+
+.container img{
+    width: 0.6rem;
+}
+.musicControl a {
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    overflow: hidden;
+    background: url("../images/pause.png") no-repeat;
+    background-size: cover;
+}
+.musicControl a.stop {
+
+    background: url('../images/play.png') no-repeat;
+    background-size: cover;
+}
+.title{
+    width:2rem;
+    display: inline-block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    -webkit-text-overflow:ellipsis;
+    -moz-text-overflow:ellipsis;
+    white-space:nowrap;
+}
+@media screen and (max-width: 320px) { /*当屏幕尺寸小于320px时，应用下面的CSS样式*/
+    .title{
+        width:1.6rem;
+        display: inline-block;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        -o-text-overflow:ellipsis;
+        -webkit-text-overflow:ellipsis;
+        -moz-text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+
+    table td {
+    border-bottom: 1px solid #eaeaea;
+    padding: 0.1rem;
+    line-height: 0.22rem;
+}
+}
+
+.left{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.right{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.anchor-list{
+    width: 100%;
+}
+.anchor-list li{
+    width: 49%;
+    float: left;
+    list-style: none;
+    text-align: center;
+    border: 1px solid #eaeaea;
+    height: 0.76rem;
+    line-height: 0.76rem;
+    border-bottom: none;
+}
+.anchor-list li a{
+    color: #333;
+    font-size: 14px;
+    display: inline-block;
+}
+.anchor-list li:nth-child(2n-1){
+    border-left: none;
+    border-right: none;
+}
+.anchor-list li:nth-child(2n){
+    border-right: none;
+}
+.nav-p{
+    border-bottom: 1px solid #eaeaea;
+    width: 96%;
+    margin: 0 auto;
+    padding: 0.14rem 0.3rem;
+    font-size: 0.26rem;
+}
+.more{
+    width: 100%;
+    text-align: center;
+    margin-top: 0.2rem;
+    height: 46px;
+    line-height: 46px;
+}
+.more a{
+    display: inline-block;
+    width: 100%;
+    color: #333;
+    font-size: 0.22rem;
+}
+
+.dropload-up,.dropload-down{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    font-size: 12px;
+    /* 开启硬件加速 */
+    -webkit-transform:translateZ(0);
+    transform:translateZ(0);
+}
+.dropload-down{
+    height: 50px;
+}
+.dropload-refresh,.dropload-update,.dropload-load,.dropload-noData{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.dropload-load .loading{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    margin: 6px;
+    border: 2px solid #666;
+    border-bottom-color: transparent;
+    vertical-align: middle;
+    -webkit-animation: rotate 0.75s linear infinite;
+    animation: rotate 0.75s linear infinite;
+}
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

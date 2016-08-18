@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>配音阁淘宝旗舰店</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<header>
+    <a class="left" href="index.html">分类样音</a>
+    <a class="active right" href="javascript:void(0);">配音主播</a>
+</header>
+
+<nav class="anchor-list" id="speaker"></nav>
+
+<!-- 模板 -->
+<script id="speaker-template" type="text/plain">
+<li>
+<a href="anchor-info.html?id={speaker_id}&title={speaker_gender} {speaker_id}号 {speaker_style}">
+{speaker_id}号 {speaker_name} {speaker_gender} {speaker_style}
+</a>
+</li>
+
+</script>
+
+<script src="js/jquery-1.11.1.js"></script>
+<!-- 填充页面 -->
+<script src="js/helper.js"></script>
+<script src="js/data/speaker.js"></script>
+
+<script type="text/javascript">
+    // 填充列表
+    fill_data('speaker-template', 'speaker', speaker);
+</script>
+
+<!-- 获取控件 -->
+<script src="js/app.js"></script>
+
+</body>
+</html>
